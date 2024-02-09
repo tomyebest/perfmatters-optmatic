@@ -1,7 +1,19 @@
 ---
 const today = new Date()
+
+import Logo from 'src/assets/images/optmatic-logo-cropped-black1.svg'
+
+let logoAlt = 'Optmatic logo'
+let logoWidth = 100
+let logoHeight = 50
 ---
 
-<footer class='flex justify-center items-center w-full px-16 h-28 border-t-2'>
-	&copy; {today.getFullYear()} Your Name. All rights reserved.
+<footer class='flex justify-between items-center w-full h-12 border-t border-black'>
+	<p class='text-sm'>
+		Created by <a class='font-bold' href='https://optmatic.com' target='_blank'>optmatic</a> in
+		{today.getFullYear() + ' '}. Thank you for reading.
+	</p>
+	<a href='https://optmatic.com' target='_blank'>
+		<img class='py-4' src={Logo.src} alt={logoAlt} width={logoWidth} height={logoHeight} />
+	</a>
 </footer>

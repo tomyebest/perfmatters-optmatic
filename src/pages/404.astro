@@ -1,0 +1,34 @@
+---
+import fourzerofour from '../assets/images/404.webp'
+import Four0hFour from '@/layouts/404Swag'
+
+/*
+const indicator = '404'
+const title404 = 'Wrong way, go back.'
+const message404 =
+	"Full-service digital agencies cause more problems than they solve. Ask us how we're different."
+	*/
+---
+
+<Four0hFour
+	title='404. Go back.'
+	description="You've reached a page that doesn't exist. Go back to the homepage."
+>
+	<main class='relative flex flex-col isolate min-h-full'>
+		<a href='/' class='cursor-w-resize'
+			><img
+				src={fourzerofour.src}
+				alt=''
+				class='bg-gray-900 absolute inset-0 -z-10 h-full w-full object-cover object-top'
+			/>
+			<div class='mx-auto max-w-7xl px-6 py-32 text-center sm:py-40 lg:px-8'>
+				<!-- <p class="text-base font-semibold leading-8 text-white">{indicator}</p> -->
+				<!-- <h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">{title404}</h1> -->
+				<!--  <p class="mt-4 text-base text-white/70 sm:mt-6">{message404}</p> -->
+				<!--   <div class="mt-10 flex justify-center"> 
+            <a href="/" class="text-sm font-semibold leading-7 text-white"><span aria-hidden="true">&larr;</span>Home</a>
+          </div> -->
+			</div>
+		</a>
+	</main>
+</Four0hFour>

@@ -2,13 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+.tag-icon {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .tag-icon {
+        display: flex;
+    }
+}
+
+p a {
+    text-decoration-line: underline;
+   @apply decoration-optmaticBlue;
+    text-underline-offset: 2px;
+
+}
+
+
+.prose a {
+	@apply decoration-optmaticBlue underline decoration-2 underline-offset-4;
+}
+
+
+aside h1 {
+	 @apply decoration-optmaticBlue underline decoration-2 underline-offset-4
+}
+
+/* aside a:active {
+	color: #fff !important;
+}
+
+*/
+
+
 @layer base {
 	/* body {
 		transition: background-color 0.5s ease;
 	} */
 
+	/*
+	* {
+		@apply border-black;
+	}
+	*/
 	.prose code {
 		@apply text-base;
+	}
+
+	@font-face {
+		font-family: Manrope;
+		src: url(../assets/fonts/Manrope-SemiBold.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: Manrope;
+		src: url(../assets/fonts/Manrope-Medium.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: Manrope;
+		src: url(../assets/fonts/Manrope-Light.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: Manrope;
+		src: url(../assets/fonts/Manrope-Regular.woff2) format('woff2');
 	}
 
 	/* prose styles here */
@@ -17,13 +76,13 @@
 	h3,
 	h4,
 	h5,
-	h6 {
-		@apply text-zinc-800 dark:text-zinc-100   !important;
+	h6, a, p, li {
+		@apply text-zinc-800;
 	}
 }
 
 .glass {
-	background: rgba(57, 56, 56, 0.52);
+	@apply bg-[#2664e9];
 	backdrop-filter: blur(13px) saturate(150%);
 	-webkit-backdrop-filter: blur(13px) saturate(150%);
 	z-index: -1;

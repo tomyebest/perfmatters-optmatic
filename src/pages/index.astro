@@ -5,16 +5,25 @@ import TitlePage from '@/components/TitlePage'
 import BaseLayout from '@/layouts/BaseLayout'
 import { getPosts } from '@/utils'
 
+import IndexHero from '@/components/q-ui/IndexHero'
+import HeroSection from '@/components/q-ui/HeroSection'
+
 const MAX_POSTS = 5 // max number of posts to show on the home page
 const posts = await getPosts(MAX_POSTS)
 ---
 
-<BaseLayout title='Home'>
-	<TitlePage title='Blog Title' />
+<BaseLayout title='Web development & ecommerce info hub'>
+	<!-- <TitlePage title='Insights on Web Development & Ecommerce' /> -->
+	<IndexHero />
+
 	<ListCategories />
 
 	<div>
-		<h2 class='text-lg font-medium tracking-wide text-end'>Latest Posts</h2>
+		<h2
+			class='text-lg font-medium tracking-wide text-end decoration-optmaticBlue underline decoration-2 underline-offset-4'
+		>
+			Latest Posts
+		</h2>
 		<ListPosts FirstBig={true} posts={posts} />
 	</div>
 </BaseLayout>

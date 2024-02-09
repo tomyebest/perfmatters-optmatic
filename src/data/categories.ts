@@ -1,8 +1,16 @@
 // List of categories for blog posts
 export const CATEGORIES = [
-	'Category 1',
-	'Category 2',
-	'Category 3',
-	'Category 4',
-	'Category 5'
+	'Misc.',
+	'Ecommerce',
+	'Web Development',
+	'Accessibility',
+	'User Experience',
+	'On-page SEO',
+	'Technical SEO',
+	'Web Design',
+	'Local SEO',
+	'WordPress',
+	'Hosting',
+	'Web Performance',
+	'Web Security'
 ] as const
